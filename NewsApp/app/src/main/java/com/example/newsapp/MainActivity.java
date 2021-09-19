@@ -17,18 +17,10 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout mTablayout;
     private ViewPager mViewPager;
 
-    EditText username, password;
-    Button btn_user, btn_guest;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
-        btn_user = findViewById(R.id.btn_login_user);
-        btn_guest = findViewById(R.id.btn_login_guest);
 
         mTablayout = findViewById(R.id.tab_id);
         mViewPager = findViewById(R.id.view_pager);
@@ -36,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPageAdapter viewPageAdapter = new ViewPageAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         mViewPager.setAdapter(viewPageAdapter);
         mTablayout.setupWithViewPager(mViewPager);
+
+
     }
 }
