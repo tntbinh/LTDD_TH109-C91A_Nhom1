@@ -1,5 +1,6 @@
 package com.example.newsapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -44,6 +45,8 @@ public class LoginFragment extends Fragment {
                 line.setVisibility(View.INVISIBLE);
                 user.setText("Xin chào " + username.getText().toString());
                 user.setVisibility(View.VISIBLE);
+
+
 
             }
         });
