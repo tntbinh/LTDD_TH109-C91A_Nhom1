@@ -37,15 +37,15 @@ public class SearchFragment extends Fragment {
         lvTieuDe.setAdapter(adapter);
 
 
-        new ReadRSS().execute("https://vnexpress.net/rss/giao-duc.rss");
-        lvTieuDe.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), DetailItemSearchActivity.class);
-                intent.putExtra("linkTinTuc",arrayLink.get(i));
-                startActivity(intent);
-            }
-        });
+//        new ReadRSS().execute("https://vnexpress.net/rss/giao-duc.rss");
+//        lvTieuDe.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Intent intent = new Intent(getActivity(), DetailItemSearchActivity.class);
+//                intent.putExtra("linkTinTuc",arrayLink.get(i));
+//                startActivity(intent);
+//            }
+//        });
 
         return view;
     }
