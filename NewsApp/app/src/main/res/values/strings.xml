@@ -1,5 +1,28 @@
 <resources>
     <string name="app_name">NEWS 24H</string>
+    <string name="text_about">
+        AllNews là một ứng dụng giúp người dùng tiếp cận tin tức một cách nhanh nhất,
+        song với giao diện thân thiện, gần gũi tạo ra nhiều trải nghiệm mới mẻ, ứng dụng gồm 3 chức năng chính:
+        Xem Tin Tức, Xem Video Tin Tức, Tìm kiếm bài báo.\n\n
+        ● Tin tức: Cập nhật những tin tức mới nhất, đến từ các mặt báo hiện tại.
+        \n\n
+        ● Tìm kiếm bài báo: Bao gồm nhiều bài viết với nhiều cấp độ IELTS, Mover, Starter, TOEIC cho người dùng lựa chọn. Mỗi đọc sẽ giúp người dùng cải thiện kĩ năng đọc hiểu song với từ ngữ từ dễ đến khó tương ứng với cấp dộ người dùng chọn.
+        \n\n
+        ● Xem video: Gần giống với chức năng tìm kiếm bài báo đều cho người dùng nhập từ khóa nhưng kết quả là hiện ra những video, giúp người dùng nghe.
+        \n\n\n
+        Dữ liệu được hỗ trợ bởi:\n
+        + API Oxford Dictionary: https://developer.oxforddictionaries.com/ \n
+        + API Tra Câu: https://tracau.vn/pages/api.html \n
+        + FireBase \n
+        \n
+        Nhóm phát triển: Nhóm 8
+        \n\n
+        \t\t1751010038dat@ou.edu.vn\n
+        \t\t1751010026dong@ou.edu.vn\n
+        \t\t1751010090minh@ou.edu.vn\n
+        \t\t1751010054hung@ou.edu.vn\n
+        \t\t1751010083minh@ou.edu.vn\n
+    </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
