@@ -19,6 +19,8 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
                 return new NewsFragment();
             case 1:
                 return new UserFragment();
+            case 2:
+                return new SearchFragment();
             default:
                 return  new NewsFragment();
         }
@@ -26,7 +28,7 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Nullable
@@ -39,6 +41,8 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
                 break;
             case 0:
                 title = "Tin nổi bật";
+            case 2:
+                title = "Tìm kiếm";
                 break;
         }
         return title;
