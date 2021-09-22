@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/bg_searchview.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/bg_searchview_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/ic_back_24.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/ic_search_24.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/line.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/layout/fragment_login.xml" value="0.259375" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/layout/fragment_news.xml" value="0.259375" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/layout/fragment_video.xml" value="0.259375" />
         <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/drawable/button_color.xml" value="0.3828125" />
         <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/drawable/line.xml" value="0.3828125" />
         <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.33" />

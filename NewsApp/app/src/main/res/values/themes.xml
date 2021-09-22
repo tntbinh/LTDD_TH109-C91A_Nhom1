@@ -12,5 +12,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="backgroundcolor">@color/white</item>
+        <item name="cardbackground">@color/white</item>
+        <item name="textcolor">#202020</item>
+        <item name="buttoncolor">@color/white</item>
+        <item name="backgroudcommon">@color/coral</item>
+        <item name="searchbackground">@drawable/bg_searchview_selector</item>
+        <item name="searchIcon">@drawable/ic_search_24</item>
+        <item name="backIcon">@drawable/ic_back_24</item>
+        <item name="textcolorRadiobutton">@color/coral</item>
     </style>
 </resources>
