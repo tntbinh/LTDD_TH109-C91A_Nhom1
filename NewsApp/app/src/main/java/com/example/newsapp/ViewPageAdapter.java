@@ -17,9 +17,9 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
         switch (position){
             case 0:
                 return new NewsFragment();
-            case 1:
-                return new UserFragment();
             case 2:
+                return new UserFragment();
+            case 1:
                 return new SearchFragment();
             default:
                 return  new NewsFragment();
@@ -36,12 +36,13 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
     public CharSequence getPageTitle(int position) {
         String title="";
         switch (position) {
-            case 1:
+            case 2:
                 title = "Tài khoản";
                 break;
             case 0:
                 title = "Tin nổi bật";
-            case 2:
+                break;
+            case 1:
                 title = "Tìm kiếm";
                 break;
         }

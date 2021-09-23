@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText username, password;
     Button btn_user, btn_guest;
-    TextView user, line;
+    TextView line;
     private Context context;
 
     @Override
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         btn_user = findViewById(R.id.btn_login_user);
         btn_guest = findViewById(R.id.btn_login_guest);
-        user = findViewById(R.id.user);
         line = findViewById(R.id.line);
 
         btn_user.setOnClickListener(new View.OnClickListener() {
@@ -67,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
                     else{
                         username.setText("");
                         password.setText("");
-                        username.setHint("Tên đăng nhập hoặc mật khẩu chưa chính xác");
-                        password.setHint("Tên đăng nhập hoặc mật khẩu chưa chính xác");
+                        username.setHint("Không hợp lệ");
+                        password.setHint("Không hợp lệ");
                     }
                 }
             }

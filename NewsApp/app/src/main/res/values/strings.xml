@@ -3,4 +3,18 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="about">
+        NEW 24H là một ứng dụng đọc báo trên điện thoại. Ứng dụng luôn cập nhật những tin tức mới nhất trên thế giới. Ứng dụng có 4 chức năng như sau:
+        Đăng nhập, Tin nổi bật, Tìm kiếm, Podcast.\n\n\n
+        ● Đăng nhập: Đổi tài khoản để có bảng tin phù hợp với sở thích của mình.\n\n
+        ● Tin nổi bật: Bảng tin cập nhật tin tức mới nhất trong ngày.\n\n
+        ● Tìm kiếm: Tìm kiếm tin tức.\n\n
+        ● Podcast: Cho phép người dùng có thể mở rộng nền tảng để tiếp nhận thông tin, không chỉ như cách truyền thống là truy cập vào trang web, hiện nay báo điện tử có thể được tìm và lắng nghe qua các podcast trên Spotify, Apple Music, MicOn\n\n\n
+        Nhóm phát triển:
+        \n
+        1751010010binh@ou.edu.vn\n
+        1751010038hoai@ou.edu.vn\n
+        1751010131tan@ou.edu.vn\n
+        1751010133thanh@ou.edu.vn\n
+    </string>
 </resources>
