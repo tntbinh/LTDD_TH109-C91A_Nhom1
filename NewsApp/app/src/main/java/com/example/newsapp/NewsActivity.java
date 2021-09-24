@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -21,6 +22,7 @@ public class NewsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
+
 
         username = getIntent().getStringExtra(MainActivity.KEY_USER_TO_MAIN);
 
