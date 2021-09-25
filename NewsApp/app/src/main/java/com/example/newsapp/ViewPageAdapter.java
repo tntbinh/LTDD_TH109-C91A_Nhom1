@@ -37,7 +37,7 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
         String title="";
         switch (position) {
             case 2:
-                title = "Tài khoản";
+                title = "Giới thiệu";
                 break;
             case 0:
                 title = "Tin nổi bật";

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,8 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
     EditText username, password;
     Button btn_user, btn_guest;
-    TextView line;
+    TextView line, error;
     private Context context;
+
+    String msg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,40 +38,48 @@ public class MainActivity extends AppCompatActivity {
         btn_user = findViewById(R.id.btn_login_user);
         btn_guest = findViewById(R.id.btn_login_guest);
         line = findViewById(R.id.line);
+        error = findViewById(R.id.error);
 
         btn_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean flag = false;
-                String username_text = username.getText().toString();
-                String password_text = password.getText().toString();
-                if (username_text.length() == 0)
-                    username.setHint("Bạn chưa nhập tên đăng nhập");
-                if (password_text.length() == 0)
-                    password.setHint("Bạn chưa nhập mật khẩu");
-                if (username_text.length() > 0){
-                    if (password_text.length() > 0){
-                        for (int i = 0; i < users.size(); i++) {
-                            System.out.println(users.get(i));
-                            if (users.get(i).getUsername().equals(username_text)){
-                                if (users.get(i).getPassword().equals(password_text)){
-                                    flag = true;
-                                    break;
+                boolean ret = ConnectionReceiver.isConnected();
+                if (ret == true){
+                    error.setText("");
+                    boolean flag = false;
+                    String username_text = username.getText().toString();
+                    String password_text = password.getText().toString();
+                    if (username_text.length() == 0)
+                        username.setHint("Bạn chưa nhập tên đăng nhập");
+                    if (password_text.length() == 0)
+                        password.setHint("Bạn chưa nhập mật khẩu");
+                    if (username_text.length() > 0){
+                        if (password_text.length() > 0){
+                            for (int i = 0; i < users.size(); i++) {
+                                System.out.println(users.get(i));
+                                if (users.get(i).getUsername().equals(username_text)){
+                                    if (users.get(i).getPassword().equals(password_text)){
+                                        flag = true;
+                                        break;
+                                    }
                                 }
                             }
                         }
+                        if (flag){
+                            Intent intent = new Intent(MainActivity.this, NewsActivity.class);
+                            intent.putExtra(KEY_USER_TO_MAIN, username_text);
+                            startActivity(intent);
+                        }
+                        else{
+                            username.setText("");
+                            password.setText("");
+                            username.setHint("Không hợp lệ");
+                            password.setHint("Không hợp lệ");
+                        }
                     }
-                    if (flag){
-                        Intent intent = new Intent(MainActivity.this, NewsActivity.class);
-                        intent.putExtra(KEY_USER_TO_MAIN, username_text);
-                        startActivity(intent);
-                    }
-                    else{
-                        username.setText("");
-                        password.setText("");
-                        username.setHint("Không hợp lệ");
-                        password.setHint("Không hợp lệ");
-                    }
+                }
+                else{
+                    error.setText("Thiết bị chưa kết nối internet");
                 }
             }
         });
@@ -76,15 +87,17 @@ public class MainActivity extends AppCompatActivity {
         btn_guest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String username_text = username.getText().toString();
-                if (btn_guest.getText().toString().equals("Tài khoản khách")) {
+                boolean ret = ConnectionReceiver.isConnected();
+                if (ret == true){
+                    error.setText("");
                     Intent intent = new Intent(MainActivity.this, NewsActivity.class);
                     startActivity(intent);
                 }
+                else{
+                    error.setText("Thiết bị chưa kết nối internet");
+                }
             }
         });
-
-
     }
     private ArrayList<User> create_user_list(){
         User user1 = new User("user1", "123456789");
