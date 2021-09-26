@@ -1,10 +1,13 @@
-package com.example.newsapp;
+package com.example.newsapp.object;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+
+import com.example.newsapp.object.WifiApp;
+
 /**
  * Created by https://giasutinhoc.vn
  */

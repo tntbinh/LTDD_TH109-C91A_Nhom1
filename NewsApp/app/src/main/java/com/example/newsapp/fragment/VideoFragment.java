@@ -11,15 +11,15 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
-import com.example.newsapp.SearchYoutube;
+import com.example.newsapp.object.SearchYoutube;
 import com.example.newsapp.R;
 
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 
 public class VideoFragment extends Fragment {
@@ -36,12 +36,12 @@ public class VideoFragment extends Fragment {
 
     LinearLayout mLinearLayout_introBtn;
 
-    Button btnVNE;
-    Button btnTNien;
-    Button btnTT;
+    ImageButton btnVNE;
+    ImageButton btnTNien;
+    ImageButton btnTT;
 
-    Button btnBack;
-    Button btnHome;
+    ImageButton btnBack;
+    ImageButton btnHome;
 
     @SuppressLint("SetJavaScriptEnabled")
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -1,10 +1,8 @@
-package com.example.newsapp;
+package com.example.newsapp.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.text.Editable;
@@ -20,6 +18,10 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import android.os.AsyncTask;
+
+import com.example.newsapp.DetailItemSearchActivity;
+import com.example.newsapp.R;
+import com.example.newsapp.object.XMLDOMParser;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

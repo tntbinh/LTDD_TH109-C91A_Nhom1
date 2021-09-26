@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.example.newsapp.object;
 
 import android.os.AsyncTask;
 import android.util.Log;

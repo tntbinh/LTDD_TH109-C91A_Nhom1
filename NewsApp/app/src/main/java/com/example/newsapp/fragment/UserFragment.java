@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.example.newsapp.fragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.newsapp.MainActivity;
+import com.example.newsapp.NewsActivity;
+import com.example.newsapp.R;
 
 public class UserFragment extends Fragment {
 

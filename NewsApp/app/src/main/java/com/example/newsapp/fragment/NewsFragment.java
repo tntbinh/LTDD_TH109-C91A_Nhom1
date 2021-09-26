@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.example.newsapp.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,6 +7,10 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.newsapp.object.Article;
+import com.example.newsapp.ArticleAdapter;
+import com.example.newsapp.R;
 
 import java.util.ArrayList;
 

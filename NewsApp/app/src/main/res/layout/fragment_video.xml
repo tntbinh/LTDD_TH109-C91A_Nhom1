@@ -6,7 +6,6 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
-        android:background="#000000"
         android:id="@+id/bmp_programme_ll"
         android:orientation="vertical">
 
@@ -14,7 +13,6 @@
             android:id="@+id/Layout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/backgroudcommon"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +33,7 @@
                 app:queryHint="Tìm kiếm..."
                 app:searchIcon="@drawable/ic_search_24" />
 
-        <ImageView
+        <ImageButton
                 android:id="@+id/btn_Back"
                 android:layout_width="35dp"
                 android:layout_height="36dp"
@@ -43,7 +41,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/ic_back_24" />
 
-        <ImageView
+        <ImageButton
                 android:id="@+id/btn_Home"
                 android:layout_width="35dp"
                 android:layout_height="36dp"
@@ -71,14 +69,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="?attr/cardbackground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="parent">
 
 
-            <ImageView
+            <ImageButton
                     android:id="@+id/btnVNE"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
@@ -89,7 +86,7 @@
                     android:background="@drawable/vn_express"
                     android:scaleY="1" />
 
-            <ImageView
+            <ImageButton
                     android:id="@+id/btnTNien"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
@@ -100,7 +97,7 @@
                     android:background="@drawable/thanhnien"
                     android:scaleY="1" />
 
-            <TextView
+            <ImageButton
                     android:id="@+id/btnTTre"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"

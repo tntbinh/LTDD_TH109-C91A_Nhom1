@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.example.newsapp.object;
 
 public class Article {
     String tieuDe, noiDungChinh, linkBaiBao;
