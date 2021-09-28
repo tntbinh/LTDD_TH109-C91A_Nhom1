@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.newsapp.fragment.NewsFragment;
 import com.example.newsapp.fragment.SearchFragment;
-import com.example.newsapp.fragment.UserFragment;
 import com.example.newsapp.fragment.VideoFragment;
 
 public class ViewPageAdapter extends FragmentStatePagerAdapter {
@@ -22,8 +21,6 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
         switch (position){
             case 0:
                 return new NewsFragment();
-            case 3:
-                return new UserFragment();
             case 1:
                 return new SearchFragment();
             case 2:
@@ -35,7 +32,7 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 
     @Nullable
@@ -44,10 +41,7 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
         String title="";
         switch (position) {
             case 2:
-                title = "Podcast";
-                break;
-            case 3:
-                title = "Giới thiệu";
+                title = "Các nền tảng khác";
                 break;
             case 0:
                 title = "Tin nổi bật";

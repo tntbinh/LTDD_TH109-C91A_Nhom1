@@ -1,6 +1,8 @@
 package com.example.newsapp.object;
 
-public class Article {
+import java.io.Serializable;
+
+public class Article implements Serializable {
     String tieuDe, noiDungChinh, linkBaiBao;
     int hinhAnh;
 

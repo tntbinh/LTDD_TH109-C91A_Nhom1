@@ -1,13 +1,21 @@
 package com.example.newsapp.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.newsapp.AboutActivity;
+import com.example.newsapp.DetailItemSearchActivity;
+import com.example.newsapp.MainActivity;
+import com.example.newsapp.NewsActivity;
 import com.example.newsapp.object.Article;
 import com.example.newsapp.ArticleAdapter;
 import com.example.newsapp.R;
@@ -32,6 +40,7 @@ public class NewsFragment extends Fragment {
 
         recyclerView = view.findViewById(R.id.recyclerview);
         listSanPham=new ArrayList<>();
+
         listSanPham.add(new Article("Tim Cook chưa 'lên đời' iPhone 13",R.drawable.hinh1,
                 "Nhiều người dùng Trung Quốc tỏ ra ngạc nhiên khi phát hiện CEO Apple vẫn dùng chiếc iPhone 12 Pro Max để viết lời chúc mừng Trung thu.",
                 "https://vnexpress.net/tim-cook-chua-len-doi-iphone-13-4360203.html"));

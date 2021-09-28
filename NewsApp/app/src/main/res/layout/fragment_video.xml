@@ -83,7 +83,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="40dp"
                     android:layout_marginBottom="15dp"
-                    android:background="@drawable/vn_express"
+                    android:background="@drawable/logo_youtube"
                     android:scaleY="1" />
 
             <ImageButton
@@ -94,7 +94,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="40dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/thanhnien"
+                    android:background="@drawable/logo_facebook"
                     android:scaleY="1" />
 
             <ImageButton
@@ -105,7 +105,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="40dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/tuoitre_online"
+                    android:background="@drawable/logo_vnexpress"
                     android:scaleY="1" />
 
         </LinearLayout>

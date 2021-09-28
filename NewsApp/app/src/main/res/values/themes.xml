@@ -22,4 +22,10 @@
         <item name="backIcon">@drawable/ic_back_24</item>
         <item name="textcolorRadiobutton">@color/coral</item>
     </style>
+    <style name="Theme.NewsApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.NewsApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.NewsApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

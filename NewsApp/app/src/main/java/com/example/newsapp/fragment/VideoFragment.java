@@ -66,7 +66,7 @@ public class VideoFragment extends Fragment {
         btnTNien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToPage("youtube.com/c/BáoThanhNiênTV");
+                goToPage("facebook.com/congdongvnexpress");
                 mLinearLayout_introBtn.setVisibility(View.GONE);
                 mWebView.setVisibility(View.VISIBLE);
             }
@@ -74,7 +74,7 @@ public class VideoFragment extends Fragment {
         btnTT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToPage("https://www.youtube.com/c/B%C3%A1oTu%E1%BB%95iTr%E1%BA%BBtv");
+                goToPage("vnexpress.net/");
                 mLinearLayout_introBtn.setVisibility(View.GONE);
                 mWebView.setVisibility(View.VISIBLE);
             }
