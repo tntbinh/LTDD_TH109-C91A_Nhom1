@@ -17,6 +17,8 @@ public class DetailItemSearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_details_item_search);
 
         webview = (WebView) findViewById(R.id.webviewTinTuc);
+        webview.getSettings().setJavaScriptEnabled(true);
+        webview.getSettings().getDomStorageEnabled();
 
         Intent intent = getIntent();
 
@@ -24,6 +26,14 @@ public class DetailItemSearchActivity extends AppCompatActivity {
 
         webview.loadUrl(link);
 
-        webview.setWebViewClient(new WebViewClient());
+        webview.setWebViewClient(new loadWebView());
+    }
+    private class loadWebView extends WebViewClient
+    {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view,String url) {
+            view.loadUrl(url);
+            return true;
+        }
     }
 }

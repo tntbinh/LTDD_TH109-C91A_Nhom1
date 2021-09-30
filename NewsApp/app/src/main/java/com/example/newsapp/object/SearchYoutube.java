@@ -97,7 +97,7 @@ public class SearchYoutube extends AsyncTask<String, Integer, String>{
                 });
                 WebSettings ws = mWebView.getSettings();
                 ws.setJavaScriptEnabled(true);
-                mWebView.loadUrl("https://www." + keyWord);
+                mWebView.loadUrl("https://www.youtube.com/results?search_query=" + keyWord);
                 e.printStackTrace();
             }catch (Exception ex){
 
