@@ -23,9 +23,7 @@ import java.util.ArrayList;
 
 class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener,View.OnLongClickListener // Implement 2 sự kiện onClick và onLongClick
 {
-    public WebView txt_description; // Khai báo biến
-
-    private ItemClickListener itemClickListener; // Khai báo interface
+    public WebView txt_description; // Khai báo biến=
 
     public RecyclerViewHolder(View itemView) {
         super(itemView);
@@ -35,21 +33,14 @@ class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClick
         itemView.setOnLongClickListener(this); // Mấu chốt ở đây , set sự kiên onLongClick cho View
     }
 
-    //Tạo setter cho biến itemClickListenenr
-    public void setItemClickListener(ItemClickListener itemClickListener)
-    {
-        this.itemClickListener = itemClickListener;
+    @Override
+    public void onClick(View view) {
+
     }
 
     @Override
-    public void onClick(View v) {
-        itemClickListener.onClick(v,getAdapterPosition(),false); // Gọi interface , false là vì đây là onClick
-    }
-
-    @Override
-    public boolean onLongClick(View v) {
-        itemClickListener.onClick(v,getAdapterPosition(),true); // Gọi interface , true là vì đây là onLongClick
-        return true;
+    public boolean onLongClick(View view) {
+        return false;
     }
 }
 

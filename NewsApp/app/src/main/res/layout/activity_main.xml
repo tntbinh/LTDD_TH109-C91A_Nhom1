@@ -63,6 +63,14 @@
             android:backgroundTint="@color/coral"
             android:text="Tài khoản khách" />
 
+    <Button
+            android:id="@+id/btn_register"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/coral"
+            android:text="Đăng ký" />
+
     <TextView
             android:id="@+id/error"
             android:layout_width="250dp"
