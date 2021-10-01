@@ -8,9 +8,7 @@ import android.net.NetworkInfo;
 
 import com.example.newsapp.object.WifiApp;
 
-/**
- * Created by https://giasutinhoc.vn
- */
+
 public class ConnectionReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {

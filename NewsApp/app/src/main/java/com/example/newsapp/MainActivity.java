@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String KEY_PASSWORD_TO_MAIN = "KEY_PASSWORD_TO_MAIN";
 
     EditText username, password;
-    Button btn_user, btn_guest, btn_register;
+    Button btn_user, btn_register;
     TextView line, error;
     ArrayList<User> userList = new ArrayList<>();
 
@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         btn_user = findViewById(R.id.btn_login_user);
-        btn_guest = findViewById(R.id.btn_login_guest);
         btn_register = findViewById(R.id.btn_register);
         line = findViewById(R.id.line);
         error = findViewById(R.id.error);
@@ -98,21 +97,6 @@ public class MainActivity extends AppCompatActivity {
                             password.setHint("Không hợp lệ");
                         }
                     }
-                }
-                else{
-                    error.setText("Thiết bị chưa kết nối internet");
-                }
-            }
-        });
-
-        btn_guest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                boolean ret = ConnectionReceiver.isConnected();
-                if (ret == true){
-                    error.setText("");
-                    Intent intent = new Intent(MainActivity.this, NewsActivity.class);
-                    startActivity(intent);
                 }
                 else{
                     error.setText("Thiết bị chưa kết nối internet");
