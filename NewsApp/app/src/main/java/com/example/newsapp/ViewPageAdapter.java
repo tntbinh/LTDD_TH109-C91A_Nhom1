@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.example.newsapp.fragment.NewsFragment;
 import com.example.newsapp.fragment.SearchFragment;
 import com.example.newsapp.fragment.VideoFragment;
+import com.example.newsapp.fragment.ViewFragment;
 
 public class ViewPageAdapter extends FragmentStatePagerAdapter {
     public ViewPageAdapter(@NonNull FragmentManager fm, int behavior) {
@@ -20,13 +20,13 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new NewsFragment();
+                return new ViewFragment();
             case 1:
                 return new SearchFragment();
             case 2:
                 return new VideoFragment();
             default:
-                return new NewsFragment();
+                return new ViewFragment();
         }
     }
 
