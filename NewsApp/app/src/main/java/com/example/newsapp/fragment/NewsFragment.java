@@ -1,60 +1,46 @@
 package com.example.newsapp.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
-
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.newsapp.AboutActivity;
+import com.example.newsapp.DetailItemSearchActivity;
+import com.example.newsapp.MainActivity;
+import com.example.newsapp.NewsActivity;
+import com.example.newsapp.object.Article;
 import com.example.newsapp.ArticleAdapter;
 import com.example.newsapp.R;
-import com.example.newsapp.The_Slide_items_Pager_Adapter;
-import com.example.newsapp.object.Article;
-import com.example.newsapp.object.The_Slide_Items_Model_Class;
-import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
-import java.util.List;
+
+public class NewsFragment extends Fragment {
 
 
-public class ViewFragment extends Fragment {
-    private List<The_Slide_Items_Model_Class> listItems;
-    private ViewPager page;
-    private TabLayout tabLayout;
     RecyclerView recyclerView;
     ArrayList<Article> listSanPham;
     ArticleAdapter sanPhamAdapter;
 
-    public ViewFragment(){
-
+    public NewsFragment() {
+        // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_view, container, false);
-        page = view.findViewById(R.id.my_pager) ;
-        tabLayout = view.findViewById(R.id.my_tablayout);
+        View view = inflater.inflate(R.layout.fragment_news, container, false);
+
         recyclerView = view.findViewById(R.id.recyclerview);
         listSanPham=new ArrayList<>();
-        listItems=new ArrayList<>();
 
-//      Add slider
-        listItems.add(new The_Slide_Items_Model_Class(R.drawable.hinh1, "Tim Cook chưa 'lên đời' iPhone 13",
-                "https://vnexpress.net/tim-cook-chua-len-doi-iphone-13-4360203.html"));
-        listItems.add(new The_Slide_Items_Model_Class(R.drawable.hinh2, "Thế giới chạy đua công nghệ metaverse",
-                "https://vnexpress.net/the-gioi-chay-dua-cong-nghe-metaverse-4359951.html"));
-        listItems.add(new The_Slide_Items_Model_Class(R.drawable.hinh3, "Xiaomi tạo 'bạn gái ảo'",
-                "https://vnexpress.net/xiaomi-tao-ban-gai-ao-4359333.html"));
-        The_Slide_items_Pager_Adapter itemsPager_adapter = new The_Slide_items_Pager_Adapter(getActivity(), listItems);
-        page.setAdapter(itemsPager_adapter);
-        tabLayout.setupWithViewPager(page,true);
-
-//      Add list view
         listSanPham.add(new Article("Tim Cook chưa 'lên đời' iPhone 13",R.drawable.hinh1,
                 "Nhiều người dùng Trung Quốc tỏ ra ngạc nhiên khi phát hiện CEO Apple vẫn dùng chiếc iPhone 12 Pro Max để viết lời chúc mừng Trung thu.",
                 "https://vnexpress.net/tim-cook-chua-len-doi-iphone-13-4360203.html"));
@@ -70,12 +56,9 @@ public class ViewFragment extends Fragment {
         listSanPham.add(new Article("Nhân lực công nghệ đã thay đổi thế nào vì Covid-19",R.drawable.hinh5,
                 "18 tháng dịch bệnh toàn cầu đã thay đổi nhiều mặt cuộc sống, trong đó, Thung lũng Silicon buộc phải chấm dứt sự ám ảnh với tối ưu hóa công việc. ",
                 "https://vnexpress.net/nhan-luc-cong-nghe-da-thay-doi-the-nao-vi-covid-19-4358393.html"));
-
         sanPhamAdapter=new ArticleAdapter(getActivity(), listSanPham);
         recyclerView.setAdapter(sanPhamAdapter);
 
-
         return view;
     }
-
 }

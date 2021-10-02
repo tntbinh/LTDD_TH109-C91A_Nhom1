@@ -10,6 +10,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.SettingInjectorService;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 boolean ret = ConnectionReceiver.isConnected();
                 if (ret == true){
+                    getAllUser();
                     error.setText("");
                     boolean flag = false;
                     String username_text = username.getText().toString();
@@ -107,8 +109,15 @@ public class MainActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
-                startActivity(intent);
+                boolean ret = ConnectionReceiver.isConnected();
+                if (ret == true) {
+                    getAllUser();
+                    Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+                    startActivity(intent);
+                }
+                else{
+                    error.setText("Thiết bị chưa kết nối internet");
+                }
             }
         });
     }

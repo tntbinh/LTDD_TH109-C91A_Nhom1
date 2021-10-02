@@ -45,6 +45,11 @@ public class RegisterActivity extends AppCompatActivity {
                         User new_user = new User(txt_username, txt_password);
                         if(!checkUserExist(new_user)){
                             addUser(new_user);
+                            try {
+                                Thread.sleep(2000);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                             Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                             startActivity(intent);
                         }
