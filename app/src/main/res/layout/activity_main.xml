@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="@color/design_default_color_background">
+
+
+    <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#3ca40f"
+                android:hint="Tài khoản"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+        <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#3ca40f"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+        <Button
+                android:id="@+id/btn_login_user"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/coral"
+                android:text="Đăng nhập" />
+
+        <TextView
+                android:id="@+id/line"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/line" />
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_register"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/coral"
+            android:text="Đăng ký" />
+
+    <TextView
+            android:id="@+id/error"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/tomato"
+            android:gravity="center"/>
+
+</LinearLayout>

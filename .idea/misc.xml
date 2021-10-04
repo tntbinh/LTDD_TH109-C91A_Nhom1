@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/bg_searchview.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/bg_searchview_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/ic_back_24.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/ic_home_24.xml" value="0.18333333333333332" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/ic_search_24.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/drawable/line.xml" value="0.2755208333333333" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/layout/fragment_login.xml" value="0.259375" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/layout/fragment_news.xml" value="0.259375" />
+        <entry key="..\:/News-App/NewsApp/app/src/main/res/layout/fragment_video.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.3171171171171171" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3537037037037037" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/drawable/bg_searchview.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/drawable/default_indicator.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3537037037037037" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/drawable/indicator_selector.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/drawable/selected_indicator.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/drawable/the_slider_background.xml" value="0.3310810810810811" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/activity_details_item_search.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.17452830188679244" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/activity_news.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/activity_register.xml" value="0.22387387387387386" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/article_view.xml" value="0.13709677419354838" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/dialog_register.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/fragment_news.xml" value="0.3005050505050505" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/fragment_search.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/fragment_user.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/fragment_video.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/fragment_view.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/item_view.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/layout/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Desktop/Binh-lttbdd/News-App/NewsApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.34629629629629627" />
+        <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/drawable/button_color.xml" value="0.3828125" />
+        <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/drawable/line.xml" value="0.3828125" />
+        <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/layout/activity_news.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/layout/fragment_news.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/layout/login_user.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Desktop/News-App/NewsApp/app/src/main/res/layout/news.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Desktop/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.3211050724637681" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

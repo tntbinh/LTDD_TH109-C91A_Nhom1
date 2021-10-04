@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">NEWS 24H</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about">
+        24h News là kênh tin tức về công nghệ hàng đầu dành cho các độc giả có niềm đam mê và hứng thú về sự phát triển và ứng dụng của công nghệ số trong thời đại 4.0.
+        24h News được ra đời với mục đích giúp cho các bạn trẻ được cập nhật liên tục về các đổi mới trong thời đại 4.0,
+        và những câu chuyện đến từ các công “ông lớn” công nghệ mà các bạn sẽ trầm trồ khi nghe đến.. Ứng dụng có 4 trang như sau:
+        Đăng nhập, Tin nổi bật, Tìm kiếm, Các nền tảng khác.\n\n\n
+        ● Đăng nhập: Đổi tài khoản để có bảng tin phù hợp với sở thích của mình.\n\n
+        ● Tin nổi bật: Bảng tin cập nhật tin tức mới nhất trong ngày.\n\n
+        ● Tìm kiếm: Tìm kiếm bảng tin.\n\n
+        ● Các nền tảng khác: Bạn có thể xem qua nội dung bảng tin với ứng dụng ưa thích của mình \n\n\n
+        Nhóm phát triển:
+        \n
+        1751010010binh@ou.edu.vn\n
+        1751010038hoai@ou.edu.vn\n
+        1751010131tan@ou.edu.vn\n
+        1751010133thanh@ou.edu.vn\n
+    </string>
+    <string name="title_activity_about">About</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
